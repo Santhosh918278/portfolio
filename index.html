@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vankudoth Santhosh | Software Engineer & Full-Stack Developer (IIITDM Jabalpur)</title>
+  <meta name="description" content="Portfolio of Vankudoth Santhosh - Software Engineer & Full-Stack Developer at PDPM IIITDM Jabalpur. 250+ LeetCode, Codeforces 1200, Adobe Hackathon Pre-Finalist. Systems in React, TypeScript, Node.js, FastAPI, PostgreSQL, Redis, Docker.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ==========================================================================
+       Recruiter-Optimized Design System (Engineered for Instant Shortlisting)
+       ========================================================================== */
+    :root {
+      --bg-dark: #070a13;
+      --bg-surface: #0c1222;
+      --bg-card: rgba(15, 23, 42, 0.75);
+      --bg-card-hover: rgba(26, 38, 64, 0.9);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(56, 189, 248, 0.35);
+      
+      --primary: #38bdf8;          /* Sky Cyan */
+      --primary-hover: #7dd3fc;
+      --primary-glow: rgba(56, 189, 248, 0.18);
+      --accent: #818cf8;           /* Indigo */
+      --accent-green: #34d399;     /* Emerald status */
+      --accent-amber: #fbbf24;     /* Trophy/Gold */
+      --accent-purple: #c084fc;
+      --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+      
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-subtle: #64748b;
+      
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 10% 12%, rgba(56, 189, 248, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 90% 40%, rgba(129, 140, 248, 0.10) 0%, transparent 45%),
+        radial-gradient(circle at 50% 85%, rgba(52, 211, 153, 0.07) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    section { padding: 5.5rem 0; position: relative; }
+
+    /* --------------------------------------------------------------------------
+       Navigation Bar
+       -------------------------------------------------------------------------- */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(7, 10, 19, 0.88); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color); padding: 0.85rem 1.5rem;
+    }
+    .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.15rem; font-weight: 800; text-decoration: none; color: var(--text-main); display: flex; align-items: center; gap: 0.6rem; }
+    .logo-badge {
+      background: rgba(56, 189, 248, 0.12); color: var(--primary); font-family: var(--font-mono);
+      font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 6px; border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+    .nav-links { display: flex; align-items: center; gap: 1.8rem; list-style: none; }
+    .nav-link { text-decoration: none; color: var(--text-muted); font-size: 0.925rem; font-weight: 500; transition: var(--transition); position: relative; }
+    .nav-link:hover, .nav-link.active { color: var(--primary); }
+    .nav-link.active::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 100%; height: 2px; background: var(--primary); border-radius: 2px; }
+    
+    .nav-cta-group { display: flex; align-items: center; gap: 0.8rem; }
+    .mobile-menu-btn { display: none; background: transparent; border: none; color: var(--text-main); font-size: 1.6rem; cursor: pointer; }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.65rem 1.35rem;
+      font-size: 0.9rem; font-weight: 600; border-radius: 8px; text-decoration: none;
+      cursor: pointer; transition: var(--transition); border: 1px solid transparent;
+    }
+    .btn-primary {
+      background: var(--primary); color: #04101d;
+      box-shadow: 0 4px 18px rgba(56, 189, 248, 0.35);
+    }
+    .btn-primary:hover { background: var(--primary-hover); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(56, 189, 248, 0.5); }
+    .btn-secondary { background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border-color); }
+    .btn-secondary:hover { background: var(--bg-card-hover); border-color: var(--border-accent); transform: translateY(-2px); }
+    .btn-resume {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.15) 0%, rgba(129, 140, 248, 0.15) 100%);
+      border: 1px solid rgba(56, 189, 248, 0.4); color: var(--primary);
+    }
+    .btn-resume:hover { background: var(--primary); color: #04101d; transform: translateY(-2px); }
+
+    /* --------------------------------------------------------------------------
+       Hero Section
+       -------------------------------------------------------------------------- */
+    .hero { padding-top: 8.5rem; padding-bottom: 3.5rem; }
+    .hero-badge-group { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.5rem; }
+    .badge-status {
+      display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(52, 211, 153, 0.1);
+      color: var(--accent-green); border: 1px solid rgba(52, 211, 153, 0.25); padding: 0.35rem 0.9rem;
+      border-radius: 9999px; font-size: 0.825rem; font-weight: 600;
+    }
+    .pulse-dot {
+      width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7); animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(52, 211, 153, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); }
+    }
+    .badge-college {
+      display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(56, 189, 248, 0.08);
+      color: var(--primary); border: 1px solid rgba(56, 189, 248, 0.22); padding: 0.35rem 0.9rem;
+      border-radius: 9999px; font-size: 0.825rem; font-weight: 600;
+    }
+    .badge-hackathon {
+      display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(251, 191, 36, 0.1);
+      color: var(--accent-amber); border: 1px solid rgba(251, 191, 36, 0.25); padding: 0.35rem 0.9rem;
+      border-radius: 9999px; font-size: 0.825rem; font-weight: 600;
+    }
+
+    .hero-title { font-size: 3.5rem; font-weight: 800; line-height: 1.15; letter-spacing: -0.035em; margin-bottom: 1.25rem; }
+    .gradient-text { background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero-subtitle { font-size: 1.18rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 2rem; max-width: 860px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; align-items: center; }
+    
+    .social-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.15rem;
+      border-radius: 8px; background: var(--bg-card); border: 1px solid var(--border-color);
+      color: var(--text-muted); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: var(--transition);
+    }
+    .social-btn svg { width: 17px; height: 17px; fill: currentColor; }
+    .social-btn:hover { color: var(--primary); border-color: var(--primary); transform: translateY(-2px); background: var(--primary-glow); }
+
+    /* --------------------------------------------------------------------------
+       Recruiter Fast-Track Card (The 15-Second Shortlist Bar)
+       -------------------------------------------------------------------------- */
+    .recruiter-summary-bar {
+      margin-top: 2rem; background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(26, 38, 64, 0.85) 100%);
+      border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 16px; padding: 1.75rem 2rem;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.5rem;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4); position: relative; overflow: hidden;
+    }
+    .recruiter-summary-bar::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: var(--accent-gradient);
+    }
+    .summary-item { display: flex; flex-direction: column; gap: 0.3rem; }
+    .summary-label { font-size: 0.78rem; font-family: var(--font-mono); color: var(--primary); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
+    .summary-value { font-size: 1.05rem; font-weight: 800; color: var(--text-main); }
+    .summary-sub { font-size: 0.85rem; color: var(--text-muted); line-height: 1.4; }
+
+    /* Section Headers */
+    .section-header { text-align: center; max-width: 760px; margin: 0 auto 3.5rem; }
+    .section-tag {
+      font-family: var(--font-mono); font-size: 0.825rem; font-weight: 700; color: var(--primary);
+      text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; display: inline-block;
+      background: rgba(56, 189, 248, 0.1); padding: 0.25rem 0.8rem; border-radius: 6px; border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+    .section-title { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.025em; margin-bottom: 0.75rem; color: var(--text-main); }
+    .section-desc { font-size: 1.05rem; color: var(--text-muted); }
+
+    /* --------------------------------------------------------------------------
+       Competitive Programming Showcase
+       -------------------------------------------------------------------------- */
+    .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
+    .metric-card {
+      background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px;
+      padding: 1.75rem 1.5rem; text-align: center; transition: var(--transition); position: relative; overflow: hidden;
+    }
+    .metric-card:hover { border-color: var(--border-accent); transform: translateY(-4px); background: var(--bg-card-hover); box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+    .metric-icon { font-size: 2.2rem; margin-bottom: 0.75rem; }
+    .metric-val { font-size: 2.4rem; font-weight: 800; color: var(--text-main); font-family: var(--font-mono); margin-bottom: 0.25rem; }
+    .metric-title { font-size: 1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; }
+    .metric-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* --------------------------------------------------------------------------
+       Featured Projects (Flagships with Live Demos & Architecture)
+       -------------------------------------------------------------------------- */
+    .projects-grid { display: flex; flex-direction: column; gap: 2.5rem; }
+    
+    .project-card {
+      background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px;
+      overflow: hidden; transition: var(--transition); position: relative;
+    }
+    .project-card:hover { border-color: var(--border-accent); transform: translateY(-3px); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45); }
+    
+    .project-card-header {
+      padding: 1.25rem 2rem; background: rgba(255, 255, 255, 0.02);
+      border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;
+    }
+    .project-category-badge {
+      font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; color: var(--primary);
+      text-transform: uppercase; letter-spacing: 0.06em; display: flex; align-items: center; gap: 0.5rem;
+    }
+    .project-live-indicator {
+      display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(52, 211, 153, 0.12);
+      color: var(--accent-green); border: 1px solid rgba(52, 211, 153, 0.3); font-size: 0.78rem; font-weight: 700;
+      padding: 0.25rem 0.7rem; border-radius: 9999px; font-family: var(--font-mono);
+    }
+
+    .project-card-body { padding: 2.25rem 2rem; }
+    .project-title-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem; }
+    .project-title { font-size: 1.65rem; font-weight: 800; color: var(--text-main); }
+    .project-desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem; }
+
+    .project-highlights { list-style: none; margin-bottom: 1.75rem; display: flex; flex-direction: column; gap: 0.75rem; }
+    .project-highlights li {
+      display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.95rem; color: #cbd5e1; line-height: 1.6;
+    }
+    .highlight-icon { color: var(--accent-green); font-weight: 900; margin-top: 0.1rem; flex-shrink: 0; }
+
+    /* Architecture Visual Breakdown Box */
+    .arch-box {
+      background: rgba(10, 15, 29, 0.85); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 12px;
+      padding: 1.25rem 1.5rem; margin-bottom: 1.75rem;
+    }
+    .arch-title {
+      font-size: 0.85rem; font-family: var(--font-mono); color: var(--primary); font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;
+    }
+    .arch-diagram {
+      font-family: var(--font-mono); font-size: 0.825rem; color: #e2e8f0; line-height: 1.6;
+      background: rgba(0, 0, 0, 0.35); padding: 0.85rem 1rem; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.05);
+      overflow-x: auto;
+    }
+
+    .project-tech { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.75rem; }
+    .tech-tag {
+      background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border-color); color: #cbd5e1;
+      padding: 0.3rem 0.8rem; border-radius: 6px; font-size: 0.825rem; font-weight: 600; font-family: var(--font-mono);
+    }
+    .tech-tag.highlight { border-color: rgba(56, 189, 248, 0.3); color: var(--primary); background: rgba(56, 189, 248, 0.06); }
+
+    .project-actions { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+    .btn-live-demo {
+      background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%); color: #fff;
+      font-weight: 700; padding: 0.65rem 1.4rem; border-radius: 8px; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 0.5rem; transition: var(--transition);
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.35);
+    }
+    .btn-live-demo:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(2, 132, 199, 0.55); filter: brightness(1.1); }
+    .btn-github {
+      background: rgba(255, 255, 255, 0.06); color: var(--text-main); border: 1px solid var(--border-color);
+      font-weight: 600; padding: 0.65rem 1.4rem; border-radius: 8px; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 0.5rem; transition: var(--transition);
+    }
+    .btn-github:hover { background: var(--bg-card-hover); border-color: var(--primary); color: var(--primary); transform: translateY(-2px); }
+
+    /* --------------------------------------------------------------------------
+       Technical Skills Arsenal
+       -------------------------------------------------------------------------- */
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+    .skill-card {
+      background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px;
+      padding: 1.75rem; transition: var(--transition);
+    }
+    .skill-card:hover { border-color: var(--border-accent); transform: translateY(-3px); background: var(--bg-card-hover); }
+    .skill-card-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; }
+    .skill-card-header span { font-size: 1.5rem; }
+    .skill-card-header h3 { font-size: 1.15rem; font-weight: 700; color: var(--text-main); }
+    .skill-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .skill-chip {
+      background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border-color); color: #cbd5e1;
+      padding: 0.35rem 0.85rem; border-radius: 6px; font-size: 0.85rem; font-weight: 600; font-family: var(--font-mono);
+      transition: var(--transition);
+    }
+    .skill-chip:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-glow); }
+
+    /* --------------------------------------------------------------------------
+       Honors, Leadership & Education
+       -------------------------------------------------------------------------- */
+    .credentials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem; }
+    .cred-card {
+      background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px;
+      padding: 2rem; position: relative; transition: var(--transition); overflow: hidden;
+    }
+    .cred-card:hover { border-color: var(--border-accent); transform: translateY(-3px); background: var(--bg-card-hover); }
+    .cred-badge {
+      display: inline-block; font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700;
+      padding: 0.25rem 0.7rem; border-radius: 6px; margin-bottom: 1rem;
+    }
+    .cred-badge.gold { background: rgba(251, 191, 36, 0.12); color: var(--accent-amber); border: 1px solid rgba(251, 191, 36, 0.3); }
+    .cred-badge.blue { background: rgba(56, 189, 248, 0.12); color: var(--primary); border: 1px solid rgba(56, 189, 248, 0.3); }
+    .cred-badge.purple { background: rgba(192, 132, 252, 0.12); color: var(--accent-purple); border: 1px solid rgba(192, 132, 252, 0.3); }
+
+    .cred-title { font-size: 1.25rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.35rem; }
+    .cred-org { font-size: 1rem; font-weight: 600; color: var(--primary); margin-bottom: 0.75rem; }
+    .cred-desc { font-size: 0.925rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* --------------------------------------------------------------------------
+       Contact Hub (One-Click Actions for Recruiters)
+       -------------------------------------------------------------------------- */
+    .contact-card {
+      max-width: 860px; margin: 0 auto; text-align: center; background: var(--bg-card);
+      border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 24px; padding: 3.75rem 2rem;
+      position: relative; overflow: hidden; box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
+    }
+    .contact-card::before {
+      content: ''; position: absolute; width: 400px; height: 400px; background: var(--primary);
+      filter: blur(160px); opacity: 0.12; top: -150px; left: calc(50% - 200px); pointer-events: none;
+    }
+    .contact-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.85rem; color: var(--text-main); }
+    .contact-desc { color: var(--text-muted); font-size: 1.05rem; max-width: 620px; margin: 0 auto 2.25rem; line-height: 1.6; }
+    .contact-pill-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.85rem; margin-bottom: 2.25rem; }
+    .contact-pill {
+      display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.4rem;
+      border-radius: 9999px; background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border-color);
+      color: var(--text-main); text-decoration: none; font-size: 0.925rem; font-weight: 500; transition: var(--transition);
+    }
+    .contact-pill:hover { background: var(--primary-glow); border-color: var(--primary); color: var(--primary); transform: translateY(-2px); }
+
+    .contact-action-row { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+
+    /* Footer */
+    footer { padding: 3rem 0; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-subtle); font-size: 0.875rem; }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed; bottom: 2rem; right: 2rem; background: #0284c7; color: #fff;
+      padding: 0.9rem 1.5rem; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      font-size: 0.925rem; font-weight: 600; opacity: 0; transform: translateY(20px);
+      transition: all 0.3s ease; z-index: 2000; pointer-events: none;
+    }
+    .toast.show { opacity: 1; transform: translateY(0); }
+
+    /* Responsive */
+    @media (max-width: 820px) {
+      .hero-title { font-size: 2.5rem; }
+      .mobile-menu-btn { display: block; }
+      .nav-links {
+        position: fixed; top: 62px; left: 0; right: 0; background: rgba(7, 10, 19, 0.98);
+        flex-direction: column; padding: 2rem; gap: 1.5rem; border-bottom: 1px solid var(--border-color);
+        display: none;
+      }
+      .nav-links.show { display: flex; }
+      .nav-cta-group { display: none; }
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .btn { justify-content: center; width: 100%; }
+      .project-card-body { padding: 1.5rem 1.25rem; }
+      .recruiter-summary-bar { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-badge">IIITDM</span> Vankudoth Santhosh
+      </a>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#summary" class="nav-link">Overview</a></li>
+        <li><a href="#metrics" class="nav-link">DSA & CP</a></li>
+        <li><a href="#projects" class="nav-link">Flagship Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#credentials" class="nav-link">Honors</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta-group">
+        <a href="#contact" class="btn btn-primary">Hire Santhosh 🚀</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="summary">
+    <div class="container">
+      <div class="hero-badge-group">
+        <span class="badge-status">
+          <span class="pulse-dot"></span> Available for Summer 2027 / 2028 SDE Roles
+        </span>
+        <span class="badge-college">
+          🎓 PDPM IIITDM Jabalpur (ECE '28)
+        </span>
+      </div>
+
+      <h1 class="hero-title">
+        Building Scalable <span class="gradient-text">Full-Stack Systems</span> & AI Infrastructure.
+      </h1>
+
+      <p class="hero-subtitle">
+        Undergraduate in Electronics and Communication Engineering at <strong>PDPM Indian Institute of Information Technology, Design and Manufacturing (IIITDM), Jabalpur</strong>. Strong algorithmic foundation with <strong>250+ LeetCode problems solved</strong>, <strong>1200 Codeforces rating (Pupil)</strong>, and hands-on experience building high-concurrency <strong>React, TypeScript, Node.js, FastAPI, and Dockerized microservices</strong>.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" style="font-size: 1rem; padding: 0.8rem 1.8rem;">
+          Explore Live Projects ↓
+        </a>
+        <a href="#contact" class="btn btn-secondary" style="font-size: 1rem; padding: 0.8rem 1.8rem;">
+          Get in Touch ✉️
+        </a>
+        <a href="https://github.com/Santhosh918278" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          github.com/Santhosh918278
+        </a>
+        <a href="https://www.linkedin.com/in/vankudoth-santhosh-889117360" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          vankudoth-santhosh
+        </a>
+      </div>
+
+      <!-- Recruiter Executive Summary Bar -->
+      <div class="recruiter-summary-bar">
+        <div class="summary-item">
+          <span class="summary-label">Target Role</span>
+          <span class="summary-value">Software Engineer / SDE</span>
+          <span class="summary-sub">Full-Stack, Backend & Systems</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Core Tech Stack</span>
+          <span class="summary-value">React, TypeScript, Node, FastAPI</span>
+          <span class="summary-sub">PostgreSQL, MySQL, Redis, Docker</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Institute & Standing</span>
+          <span class="summary-value">IIITDM Jabalpur</span>
+          <span class="summary-sub">B.Tech ECE (2024–2028) • CGPA: 7.0</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Problem Solving</span>
+          <span class="summary-value">250+ LeetCode Solved</span>
+          <span class="summary-sub">1200 Codeforces Pupil • 2★ CodeChef</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Competitive Programming Showcase -->
+  <section id="metrics">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Algorithmic Rigor</span>
+        <h2 class="section-title">Competitive Programming</h2>
+        <p class="section-desc">Demonstrated analytical problem-solving speed, clean code structure, and deep algorithmic foundations.</p>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon">⚡</div>
+          <div class="metric-val">250+</div>
+          <div class="metric-title">LeetCode Problems</div>
+          <div class="metric-desc">Mastery in Arrays, Two Pointers, Trees, Graphs, HashMaps, and Dynamic Programming.</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon">🎯</div>
+          <div class="metric-val">1200</div>
+          <div class="metric-title">Codeforces Rating</div>
+          <div class="metric-desc">Pupil Tier • Consistent contest participation under high-pressure competitive time constraints.</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon">🌟</div>
+          <div class="metric-val">2★ Coder</div>
+          <div class="metric-title">CodeChef Division</div>
+          <div class="metric-desc">Active competitor in global rated rounds with optimal time/space complexity solutions.</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon">☕</div>
+          <div class="metric-val">Java & Python</div>
+          <div class="metric-title">Core CS Fundamentals</div>
+          <div class="metric-desc">Strong grasp of Object-Oriented Design, Memory Management, and Operating Systems principles.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flagship Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Production Implementations</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">Enterprise-grade systems with live deployed demonstrations, source code repositories, and deep architectural rigor.</p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1: AI-Powered Security Reverse Proxy -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-category-badge">
+              🛡️ AI Gateway & Observability
+            </span>
+            <span class="project-live-indicator">
+              ● Live Production Demo Available
+            </span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-title-row">
+              <h3 class="project-title">AI-Powered Security Reverse Proxy & Observability Platform</h3>
+            </div>
+            <p class="project-desc">
+              Full-stack security proxy inspecting real-time traffic between client applications and upstream LLM APIs. Combines sub-1ms regex scanning with LLM-as-a-judge heuristics to neutralize prompt injections and PII leaks before and during token generation.
+            </p>
+
+            <!-- Architecture Box -->
+            <div class="arch-box">
+              <div class="arch-title">⚙️ Architecture & Data Pipeline:</div>
+              <div class="arch-diagram">
+Client App ──▶ [Security Reverse Proxy Gateway] ──▶ Regex Scanner (PII/Injection) ──▶ Upstream LLM
+                       │ (Mid-Stream SSE Token Buffering)
+                       ├──▶ Policy Violation? ──▶ Terminate Stream (&lt;200ms) + Block Reason
+                       ├──▶ PostgreSQL (Users, Auth, Tenant Security Policies)
+                       ├──▶ MongoDB (10,000+ Append-Only Audit Traces)
+                       └──▶ WebSockets ──▶ Real-Time React Observability Dashboard
+              </div>
+            </div>
+
+            <ul class="project-highlights">
+              <li><span class="highlight-icon">✓</span> <strong>Mid-Stream Response Interception:</strong> Buffers and inspects streaming Server-Sent Events (SSE) token-by-token with the capability to abort generation mid-stream on safety policy breach.</li>
+              <li><span class="highlight-icon">✓</span> <strong>Dual-Database Architecture:</strong> Isolates relational tenant authentication and security rules in <strong>PostgreSQL</strong> while streaming high-velocity audit event logs into <strong>MongoDB</strong>.</li>
+              <li><span class="highlight-icon">✓</span> <strong>Real-Time WebSockets Telemetry:</strong> Pushes live security block alerts and token latency telemetry to an administrative React dashboard without client polling.</li>
+            </ul>
+
+            <div class="project-tech">
+              <span class="tech-tag highlight">Node.js</span>
+              <span class="tech-tag highlight">React</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">WebSockets</span>
+              <span class="tech-tag">LLM-as-Judge</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://ai-security-proxy.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-live-demo">
+                <span>Live Demo ↗</span>
+              </a>
+              <a href="https://github.com/Santhosh918278/ai-security-proxy" target="_blank" rel="noopener noreferrer" class="btn-github">
+                <span>View Source on GitHub →</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: CineBook -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-category-badge">
+              🎬 High-Concurrency Booking Engine
+            </span>
+            <span class="project-live-indicator">
+              ● Live Production Demo Available
+            </span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-title-row">
+              <h3 class="project-title">CineBook — Movie Ticket Booking Web App</h3>
+            </div>
+            <p class="project-desc">
+              High-concurrency full-stack ticketing platform engineered with ACID-compliant transactions and row-level pessimistic locking to completely eliminate double-booking race conditions during high-volume seat checkout spikes.
+            </p>
+
+            <!-- Architecture Box -->
+            <div class="arch-box">
+              <div class="arch-title">⚙️ Concurrency & Lock Mechanism:</div>
+              <div class="arch-diagram">
+Client Checkout ──▶ Express API ──▶ BEGIN TRANSACTION
+                                           │
+                        SELECT * FROM seats WHERE id = ? FOR UPDATE;  &lt;-- (Pessimistic Row Lock)
+                                           │
+                     ┌─────────────────────┴─────────────────────┐
+                     ▼                                           ▼
+             Seat AVAILABLE:                             Seat OCCUPIED:
+        UPDATE status = 'RESERVED';                     ROLLBACK TRANSACTION;
+        INSERT INTO bookings (...);                     Throw 409 Conflict: "Seat Locked"
+        COMMIT TRANSACTION;
+              </div>
+            </div>
+
+            <ul class="project-highlights">
+              <li><span class="highlight-icon">✓</span> <strong>ACID Concurrency Engine:</strong> Implemented MySQL row-level pessimistic locking (<code>SELECT ... FOR UPDATE</code>), preventing 100% of double-booking race conditions under high concurrent checkout loads.</li>
+              <li><span class="highlight-icon">✓</span> <strong>High-Performance REST APIs:</strong> Built optimized Express routes with indexed relational schema queries, maintaining sub-25ms response latency under heavy traffic.</li>
+              <li><span class="highlight-icon">✓</span> <strong>Interactive SVG Cinema Layout:</strong> Designed a type-safe React/TypeScript frontend rendering live seat grids with sub-100ms optimistic UI updates and secure JWT sessions.</li>
+            </ul>
+
+            <div class="project-tech">
+              <span class="tech-tag highlight">React</span>
+              <span class="tech-tag highlight">TypeScript</span>
+              <span class="tech-tag highlight">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Row-Level Locking</span>
+              <span class="tech-tag">JWT Auth</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://cinebook-app-b246.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-live-demo">
+                <span>Live Demo ↗</span>
+              </a>
+              <a href="https://github.com/Santhosh918278/cinebook-app" target="_blank" rel="noopener noreferrer" class="btn-github">
+                <span>View Source on GitHub →</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: MockMate -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-category-badge">
+              🤖 Distributed AI Microservices
+            </span>
+            <span class="project-category-badge" style="color: var(--accent);">
+              🐳 3x Docker Microservices
+            </span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-title-row">
+              <h3 class="project-title">MockMate — AI-Powered Mock Interview Platform</h3>
+            </div>
+            <p class="project-desc">
+              Containerized distributed AI interview platform orchestrating a React frontend, Node/Express business logic API, and Python FastAPI microservice. Features adaptive context-aware dynamic questioning and real-time speech evaluation.
+            </p>
+
+            <!-- Architecture Box -->
+            <div class="arch-box">
+              <div class="arch-title">⚙️ Microservices Topology:</div>
+              <div class="arch-diagram">
+[React Frontend] ──HTTP/WS──▶ [Express/Prisma Gateway] ──REST──▶ [FastAPI AI Service]
+                                       │                                │ (Groq LLM / Whisper)
+                       ├── JWT Auth & Refresh Tokens                    ├── 6-Phase Adaptive Interview
+                       ├── PostgreSQL (Interviews, Users)              └── ~600ms Speech Synthesis
+                       └── BullMQ Producer ──▶ [Redis Queue] ──▶ Async PDF ATS Resume Scoring
+              </div>
+            </div>
+
+            <ul class="project-highlights">
+              <li><span class="highlight-icon">✓</span> <strong>Containerized 3-Tier Architecture:</strong> Packaged React, Express, and Python FastAPI microservices into separate independent Docker containers with automated health checks.</li>
+              <li><span class="highlight-icon">✓</span> <strong>6-Phase Adaptive Questioning:</strong> Designed a context-aware LLM interview flow generating intelligent dynamic follow-ups across 6 tracks (System Design, DSA, Behavioral, etc.).</li>
+              <li><span class="highlight-icon">✓</span> <strong>Async Resume Scoring Pipeline:</strong> Engineered an asynchronous BullMQ + Redis job queue parsing complex PDF resumes and generating ATS feedback in under 2.5s.</li>
+            </ul>
+
+            <div class="project-tech">
+              <span class="tech-tag highlight">FastAPI (Python)</span>
+              <span class="tech-tag highlight">React</span>
+              <span class="tech-tag highlight">Docker</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Redis / BullMQ</span>
+              <span class="tech-tag">Groq Whisper</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/Santhosh918278/MockMate" target="_blank" rel="noopener noreferrer" class="btn-github">
+                <span>View Source on GitHub →</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Arsenal (Skills) -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Competencies</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-desc">Strictly verified technologies and tools practiced across production systems and high-concurrency architectures.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span>⚡</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">Java</span>
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">JavaScript (ES6+)</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span>🎨</span>
+            <h3>Frontend Development</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">React.js</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">HTML5</span>
+            <span class="skill-chip">CSS3</span>
+            <span class="skill-chip">Axios</span>
+            <span class="skill-chip">Optimistic UI</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span>⚙️</span>
+            <h3>Backend & APIs</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">Node.js</span>
+            <span class="skill-chip">Express.js</span>
+            <span class="skill-chip">FastAPI (Python)</span>
+            <span class="skill-chip">RESTful APIs</span>
+            <span class="skill-chip">JWT Authentication</span>
+            <span class="skill-chip">WebSockets</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span>🗄️</span>
+            <h3>Databases & Caching</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">PostgreSQL</span>
+            <span class="skill-chip">MySQL</span>
+            <span class="skill-chip">MongoDB</span>
+            <span class="skill-chip">Redis</span>
+            <span class="skill-chip">Row-Level Locking</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span>🛠️</span>
+            <h3>Tools & Core CS</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">Docker</span>
+            <span class="skill-chip">Git / GitHub</span>
+            <span class="skill-chip">VS Code</span>
+            <span class="skill-chip">DSA</span>
+            <span class="skill-chip">OOPs</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span>🗣️</span>
+            <h3>Spoken Languages</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">English (Professional)</span>
+            <span class="skill-chip">Telugu (Mother Tongue)</span>
+            <span class="skill-chip">Hindi (Conversational)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Honors, Leadership & Education -->
+  <section id="credentials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Credentials & Proven Track Record</span>
+        <h2 class="section-title">Education & Honors</h2>
+        <p class="section-desc">Academic excellence at a premier institute paired with competitive national recognitions.</p>
+      </div>
+
+      <div class="credentials-grid">
+        <div class="cred-card">
+          <span class="cred-badge blue">Institute of National Importance</span>
+          <div class="cred-title">B.Tech in Electronics & Communication</div>
+          <div class="cred-org">PDPM IIITDM Jabalpur • 2024 — 2028</div>
+          <div class="cred-desc">
+            Expected CGPA: <strong>7.0 / 10.0</strong>. Rigorous coursework in Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, and Computer Networks.
+          </div>
+        </div>
+
+        <div class="cred-card">
+          <span class="cred-badge gold">National Competitive Recognition</span>
+          <div class="cred-title">Adobe Hackathon Pre-Finalist</div>
+          <div class="cred-org">Adobe Systems Nationwide Hackathon</div>
+          <div class="cred-desc">
+            Competed against engineering teams nationwide, engineering scalable software solutions under timed evaluation sprints and advancing to the prestigious pre-final evaluation round.
+          </div>
+        </div>
+
+        <div class="cred-card">
+          <span class="cred-badge purple">Campus Leadership</span>
+          <div class="cred-title">Working Committee Member</div>
+          <div class="cred-org">Shutterbox Club • IIITDM Jabalpur</div>
+          <div class="cred-desc">
+            Active committee member coordinating institute-level event operations, visual media initiatives, and cross-functional team coordination for campus festivals and technical summits.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recruiter Contact Hub -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <h2 class="contact-title">Ready to Shortlist? Let's Connect.</h2>
+        <p class="contact-desc">
+          I am actively preparing for software engineering internships and developer roles. Whether you need a full-stack engineer who understands row-level locking or an AI systems builder, let's talk.
+        </p>
+
+        <div class="contact-pill-grid">
+          <a href="mailto:vankudothsanthosh92@gmail.com" class="contact-pill">
+            ✉️ vankudothsanthosh92@gmail.com
+          </a>
+          <a href="tel:+918247256774" class="contact-pill">
+            📞 +91 8247256774
+          </a>
+          <a href="https://www.linkedin.com/in/vankudoth-santhosh-889117360" target="_blank" rel="noopener noreferrer" class="contact-pill">
+            🔗 LinkedIn: vankudoth-santhosh
+          </a>
+          <a href="https://github.com/Santhosh918278" target="_blank" rel="noopener noreferrer" class="contact-pill">
+            🐙 GitHub: Santhosh918278
+          </a>
+        </div>
+
+        <div class="contact-action-row">
+          <a href="mailto:vankudothsanthosh92@gmail.com" class="btn btn-primary" style="font-size: 1.05rem; padding: 0.85rem 2.2rem;">
+            Send Direct Email 🚀
+          </a>
+          <button class="btn btn-secondary" onclick="copyEmail('vankudothsanthosh92@gmail.com')" style="font-size: 1.05rem; padding: 0.85rem 2rem;">
+            Copy Email Address 📋
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© <span id="currentYear">2026</span> Vankudoth Santhosh • Built for Engineering Excellence • Hosted with Zero Bloat</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    ✓ Email copied to clipboard: vankudothsanthosh92@gmail.com
+  </div>
+
+  <script>
+    // Navigation & Interaction
+    document.addEventListener('DOMContentLoaded', () => {
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const navLinks = document.getElementById('navLinks');
+
+      if (mobileBtn && navLinks) {
+        mobileBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            navLinks.classList.remove('show');
+          });
+        });
+      }
+
+      // Active Navigation state on scroll
+      const sections = document.querySelectorAll('section[id]');
+      const navItems = document.querySelectorAll('.nav-link');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        const scrollY = window.pageYOffset;
+
+        sections.forEach(section => {
+          const sectionHeight = section.offsetHeight;
+          const sectionTop = section.offsetTop - 120;
+          const sectionId = section.getAttribute('id');
+
+          if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            current = sectionId;
+          }
+        });
+
+        navItems.forEach(item => {
+          item.classList.remove('active');
+          if (item.getAttribute('href') === `#${current}`) {
+            item.classList.add('active');
+          }
+        });
+      });
+
+      const yearSpan = document.getElementById('currentYear');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    });
+
+    // Copy Email to Clipboard Helper
+    function copyEmail(email) {
+      navigator.clipboard.writeText(email).then(() => {
+        const toast = document.getElementById('toast');
+        if (toast) {
+          toast.classList.add('show');
+          setTimeout(() => toast.classList.remove('show'), 2800);
+        } else {
+          alert(`Copied email to clipboard: ${email}`);
+        }
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+    }
+  </script>
+</body>
+</html>
